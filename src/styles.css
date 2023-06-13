@@ -1,0 +1,18 @@
+@import "../node_modules/ng-zorro-antd/ng-zorro-antd.min.css";
+
+[nz-carousel-content] {
+  text-align: center;
+  height: 160px;
+  /* background: #364d79; */
+  background: #5E3DB3;
+  color: #fff;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+*{
+  font-family: 'Roboto', sans-serif; 
+}
+body{
+  overflow-x: hidden !important;
+}

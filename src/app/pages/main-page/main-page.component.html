@@ -1,0 +1,117 @@
+<!-- footballer -->
+<img src="assets/images/footballer.png" class="img-footballer">
+<div class="path-athlets">
+    <img src="assets/images/path.svg" class="img-path-left">
+    <img src="assets/images/path.svg" class="img-path-right">
+</div>
+<div class="content">
+    <div class="content-white blackground-white">
+        <div class="header">ATHLETS</div>
+        <div class="header-group">
+            <div>
+                <div class="header-list">01</div>
+                <div class="underline blackground-purple"></div>
+            </div>
+            <span class="header-list-title">CONNECTION</span>
+        </div>
+        <p>Connect with coaches directly, you can ping coaches to view profile.</p>
+    </div>
+    <div class="content-grey blackground-grey">
+        <div class="header-group">
+            <div>
+                <div class="header-list">02</div>
+                <div class="underline blackground-purple"></div>
+            </div>
+            <span class="header-list-title">COLLABORATION</span>
+        </div>
+        <p>Work with other student athletes to increase visibility. When you share and like other playes videos it wil
+            increase your visibility as a player. This it the team work aspect to Surface 1.</p>
+    </div>
+    <div class="content-purple blackground-purple">
+        <div class="header-group">
+            <div>
+                <div class="header-list">03</div>
+                <div class="underline blackground-white"></div>
+            </div>
+            <span class="header-list-title">GROWTH</span>
+        </div>
+        <p>Resources and tools for you get better as a student Athelete. Access to training class, tutor sessions, etc.
+        </p>
+    </div>
+</div>
+
+<!-- player -->
+<img src="assets/images/player.png" class="img-player">
+<div class="path-players">
+    <img src="assets/images/path.svg" class="img-path-left">
+    <img src="assets/images/path.svg" class="img-path-right">
+</div>
+<div class="content">
+    <div class="content-white-left content-width blackground-white">
+        <div class="header">PALYERS</div>
+        <div class="header-group">
+            <div>
+                <div class="header-list">01</div>
+                <div class="underline blackground-purple"></div>
+            </div>
+            <span class="header-list-title">CONNECTION</span>
+        </div>
+        <p>Connect with talented athlete directly, you can watch their skills through video showreels directly form
+            Surface
+            1.</p>
+    </div>
+
+    <div class="content-grey-left content-width blackground-grey">
+        <div class="header-group">
+            <div>
+                <div class="header-list">02</div>
+                <div class="underline blackground-purple"></div>
+            </div>
+            <span class="header-list-title">COLLABORATION</span>
+        </div>
+        <p>Work with recruiter to increase your chances of finding talented athlete.</p>
+    </div>
+    <div class="content-navy-left content-width blackground-navy">
+        <div class="header-group">
+            <div>
+                <div class="header-list color-purple">03</div>
+                <div class="underline blackground-white"></div>
+            </div>
+            <span class="header-list-title">GROWTH</span>
+        </div>
+        <p>Save your time, recruit proper athlets for your team.</p>
+    </div>
+</div>
+
+<!-- carousel -->
+<div class="content-carouse"><div class="header">ATHLETS</div></div>
+<div class="content-carousel-athlets">
+    <nz-carousel [nzEffect]="effect">
+        <div nz-carousel-content *ngFor="let list of dataOfAthlets">
+            <div class="header-group">
+                <div>
+                    <div class="header-list">{{list.id}}</div>
+                    <div class="underline"></div>
+                </div>
+                <span class="header-list-title">{{list.title.toLocaleUpperCase()}}</span>
+            </div>
+            <p>{{list.content}}</p>
+        </div>
+    </nz-carousel>
+</div>
+
+<div class="content-carouse"><div class="header">PALYERS</div></div>
+<div class="content-carousel-players">
+    <nz-carousel [nzEffect]="effect">
+        <div nz-carousel-content *ngFor="let list of dataOfPlayers">
+            <div class="header-group">
+                <div>
+                    <div class="header-list">{{list.id}}</div>
+                    <div class="underline"></div>
+                </div>
+                <span class="header-list-title">{{list.title.toLocaleUpperCase()}}</span>
+            </div>
+            <p>{{list.content}}</p>
+        </div>
+    </nz-carousel>
+</div>
